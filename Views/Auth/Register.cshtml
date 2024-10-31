@@ -1,0 +1,14 @@
+@model  CrudApp.Models.RegisterModel
+
+<form asp-action="Register" method="post">
+    <div class="form-group">
+        <label asp-for="Email" >Email</label>
+        <input class="form-control" asp-for="Email" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Password" >Password</label>
+        <input class="form-control" asp-for="Password" type="password" />
+        <span asp-asp-validation-for="password" class="text-danger"></span>
+    </div>
+    <button class="btn btn-warning mt-2" type="submit">Register</button>
+</form>
